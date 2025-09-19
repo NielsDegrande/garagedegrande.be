@@ -36,16 +36,8 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    const header = document.querySelector('.hero-section');
-
     window.addEventListener('scroll', () => {
         const currentScroll = window.pageYOffset;
-
-        // Parallax effect for hero section
-        if (header) {
-            const parallax = -currentScroll * 0.5;
-            header.style.backgroundPositionY = parallax + 'px';
-        }
 
         // Hide scroll indicator when user scrolls down
         if (scrollIndicator) {
